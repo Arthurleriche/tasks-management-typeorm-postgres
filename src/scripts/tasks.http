@@ -1,0 +1,36 @@
+### GET ALL TASKS
+GET http://localhost:5000/tasks  HTTP/1.1\r\n
+
+### GET ALL TASKS WITH FILTERS
+GET http://localhost:5000/tasks?status=OPEN&search=ne  HTTP/1.1\r\n
+
+### GET TASK
+GET http://localhost:5000/tasks/a42f5e3d-2c3e-4657-ae2d-f96c733b34b6  HTTP/1.1\r\n
+Content-Type: application/json
+
+
+### CREATE TASK
+POST http://localhost:5000/tasks  HTTP/1.1\r\n
+Content-Type: application/json
+
+{
+    "title": "new task for postgres",
+    "description": "new description task"
+}
+
+### UPDATE TASK
+PATCH http://localhost:5000/tasks/a42f5e3d-2c3e-4657-ae2d-f96c733b34b6/status HTTP/1.1\r\n
+content-type: application/json
+
+{
+    "status": "IN_PROGRESS"
+}
+
+### DELETE TASK
+DELETE http://localhost:5000/tasks/996d18c7-bd80-48f2-a029-59990ad25a88  HTTP/1.1\r\n
+Content-Type: application/json
+
+
+
+
+
