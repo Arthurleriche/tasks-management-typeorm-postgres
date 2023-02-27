@@ -1,8 +1,10 @@
 ### GET ALL TASKS
 GET http://localhost:5000/tasks  HTTP/1.1\r\n
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlJvb2tpbmhvcyIsImlhdCI6MTY3NzUwNzgxNSwiZXhwIjoxNjc3NTExNDE1fQ.bkSfLeuSs_hJwtbX-8HTvrjIj9zkzTez5K_qogk6l1Q
 
 ### GET ALL TASKS WITH FILTERS
 GET http://localhost:5000/tasks?status=OPEN&search=ne  HTTP/1.1\r\n
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlJvb2tpbmhvcyIsImlhdCI6MTY3NzUwNzgxNSwiZXhwIjoxNjc3NTExNDE1fQ.bkSfLeuSs_hJwtbX-8HTvrjIj9zkzTez5K_qogk6l1Q
 
 ### GET TASK
 GET http://localhost:5000/tasks/a42f5e3d-2c3e-4657-ae2d-f96c733b34b6  HTTP/1.1\r\n
@@ -12,6 +14,7 @@ Content-Type: application/json
 ### CREATE TASK
 POST http://localhost:5000/tasks  HTTP/1.1\r\n
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlJvb2tpbmhvcyIsImlhdCI6MTY3NzUwOTMzOCwiZXhwIjoxNjc3NTEyOTM4fQ.vBbMzuk-KDX6rZLLGUAKDNu0gLZiNodUnBXEI275ogM
 
 {
     "title": "new task for postgres",
